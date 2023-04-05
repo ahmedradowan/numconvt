@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number converter with fractional value</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Number converter with fractional value</h1>
+    <form>
+      <label for="input-number">Input number:</label>
+      <input type="text" id="input-number" name="input-number" placeholder="Enter a number" required>
+      <br>
+      <label for="input-base">Input base:</label>
+      <select id="input-base" name="input-base">
+        <option value="binary">Binary</option>
+        <option value="octal">Octal</option>
+        <option value="decimal" selected>Decimal</option>
+        <option value="hexadecimal">Hexadecimal</option>
+      </select>
+      <br>
+      <label for="output-base">Output base:</label>
+      <select id="output-base" name="output-base">
+        <option value="binary">Binary</option>
+        <option value="octal">Octal</option>
+        <option value="decimal">Decimal</option>
+        <option value="hexadecimal">Hexadecimal</option>
+      </select>
+      <br>
+      <button type="button" id="convert-button">Convert</button>
+      <br>
+      <span id="error-message"></span>
+    </form>
+    <div class="output-section">
+      <label for="output-number">Output number:</label>
+      <textarea id="output-number" name="output-number" placeholder="Output number will appear here" readonly></textarea>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+<footer style="text-align:center">
+  <p>This website is created by <u><a href="https://www.facebook.com/radowan.ahmed.1st" style="color: blue">Radowan Ahmed</a></u></p>
+</footer>
+</html>
+
+
+
+
+
